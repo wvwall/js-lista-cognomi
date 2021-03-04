@@ -32,6 +32,10 @@ console.log(cognomi);
     }
  */
 
+ //Ordinare alfabeticamente con sort()
+
+cognomi.sort();
+
 document.getElementById("titolo").innerHTML= "Cognomi ordinati alfabeticamente: "
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[0] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[1] +"</li>";
