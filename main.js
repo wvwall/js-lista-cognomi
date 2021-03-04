@@ -11,9 +11,26 @@ cognomi.push(cognome);
 console.log(cognomi);
 
 
-//Ordinare alfabeticamente e stampare
+//Ordinare alfabeticamente con sort()
 
-cognomi.sort();
+/* cognomi.sort(); */
+
+//Ordinare alfabeticamente usando un ciclo (da capire come funziona)
+
+/* var i = 0, j; 
+    while (i < cognomi.length) { 
+        j = i + 1; 
+        while (j < cognomi.length) { 
+            if (cognomi[j] < cognomi[i]) { 
+                var temp = cognomi[i]; 
+                cognomi[i] = cognomi[j]; 
+                cognomi[j] = temp; 
+            } 
+            j++; 
+        } 
+        i++; 
+    }
+ */
 
 document.getElementById("titolo").innerHTML= "Cognomi ordinati alfabeticamente: "
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[0] +"</li>";
