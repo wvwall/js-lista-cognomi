@@ -23,3 +23,7 @@ document.getElementById("lista").innerHTML+="<li>"+ cognomi[3] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[4] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[5] +"</li>";
 
+var posizione = cognomi.indexOf(cognome);
+document.getElementById("position").innerHTML+= posizione + 1;
+console.log(posizione + 1);
+
