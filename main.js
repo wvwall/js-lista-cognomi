@@ -36,6 +36,14 @@ console.log(cognomi);
 
 cognomi.sort();
 
+//Stampare
+
+document.getElementById("titolo").innerHTML= "Cognomi ordinati alfabeticamente: ";
+
+for(var i = 0; i < cognomi.length; i++){
+    document.getElementById("lista").innerHTML+="<li>"+ cognomi[i] +"</li>";
+}
+/* 
 document.getElementById("titolo").innerHTML= "Cognomi ordinati alfabeticamente: "
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[0] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[1] +"</li>";
@@ -43,7 +51,7 @@ document.getElementById("lista").innerHTML+="<li>"+ cognomi[2] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[3] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[4] +"</li>";
 document.getElementById("lista").innerHTML+="<li>"+ cognomi[5] +"</li>";
-
+ */ 
 var posizione = cognomi.indexOf(cognome);
 document.getElementById("position").innerHTML+= posizione + 1;
 console.log(posizione + 1);
